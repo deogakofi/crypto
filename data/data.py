@@ -559,7 +559,8 @@ def return_figures():
         layout_one = dict(title = "Top 20 cryptocurrencies in order of Marketcap",
                     xaxis = dict(title = 'cyptocurrency',
                       autotick=False),
-                    yaxis = dict(title = 'Marketcap (£Bn)'),
+                    yaxis = dict(title = 'Marketcap (£Bn)',
+                    tickprefix = "£"),
                     )
     #Create Graph two
     graph_two = []
@@ -580,7 +581,8 @@ def return_figures():
         layout_two = dict(title = 'Top 20 cryptocurrencies in order of current 24hr Volume',
                   xaxis = dict(title = 'cryptocurrency',
                     autotick=False),
-                  yaxis = dict(title = 'Volume (£Bn)'),
+                  yaxis = dict(title = 'Volume (£Bn)',
+                  tickprefix = "£"),
                   )
 
     #Create Graph three
@@ -603,7 +605,8 @@ def return_figures():
         layout_three = dict(title = 'Average Yearly bitcoin price',
               xaxis = dict(title = 'Year',
                 autotick=False),
-              yaxis = dict(title = 'Average yearly bitcoin price (£)'),
+              yaxis = dict(title = 'Average yearly bitcoin price (£)',
+              tickprefix = "£"),
               )
 
     #Create Graph four
@@ -629,7 +632,8 @@ def return_figures():
         layout_four = dict(title = 'Average monthly bitcoin price',
               xaxis = dict(title = 'Month',
                 autotick=False),
-              yaxis = dict(title = 'Average monthly bitcoin price (£)'),
+              yaxis = dict(title = 'Average monthly bitcoin price (£)',
+              tickprefix = "£"),
               )
 
 
@@ -654,7 +658,8 @@ def return_figures():
         layout_five = dict(title = 'Average bitcoin price for each day of the week (ASC)',
               xaxis = dict(title = 'Day_of_week',
                 autotick=False),
-              yaxis = dict(title = 'Average price (£)'),
+              yaxis = dict(title = 'Average price (£)',
+              tickprefix = "£"),
               )
 
     #Create Graph five
