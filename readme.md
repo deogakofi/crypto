@@ -76,6 +76,10 @@ Installation
       * `trade_view.html` tradeview for bitcoin which renders when you run the app
     * `__init__.py`: Initiate flask app
     * `routes.py`: Defines the app routes
+
+  * `Procfile` Contains the procfile for gunicorn
+
+  * `requirements.txt` Contains the list of dependencies for pip install
 * It is recommended you run the solution in a virtual environment. Please see https://docs.python.org/3/library/venv.html
 
 
@@ -87,8 +91,8 @@ Installation
 * Install the requirements using `pip3 install -r requirements.txt`.
     * Make sure you use Python 3
 * `cd` to the location of myapp.py (should be located in parent folder)
-* Execute `python3 myapp.py`
-* Follow the information printed in your environment to the site. Usually 0.0.0.0:3001 or localhost:3001
+* Execute `gunicorn -b 0.0.0.0:3001 myapp:app`
+* Go to browser address http://0.0.0.0:3001 to view site locally
 
 
 Extending this
