@@ -1,4 +1,15 @@
+<<<<<<< HEAD
 certifi==2020.6.20
+=======
+appdirs==1.4.4
+appnope==0.1.0
+attrs==19.3.0
+backcall==0.1.0
+beautifulsoup4==4.9.0
+bleach==3.1.4
+bs4==0.0.1
+certifi==2020.4.5.1
+>>>>>>> f02f58a39e121349279eef6e4837c8d041f6e3e5
 chardet==3.0.4
 click==7.1.2
 Flask==1.1.2
