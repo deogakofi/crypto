@@ -9,8 +9,8 @@ If there was a system to do this then everyone would be doing it and be rich by 
 Approach
 -----------
 There are a few approaches that can be taken to build the system.
-* Sentiment analysis - Scraping for sentiments on the coin and analysing to make trading decisions
-* Technical analysis - Using the historical price of the coin to make trading decisions
+* **Sentiment analysis** - Scraping for sentiments on the coin and analysing to make trading decisions
+* **Technical analysis** - Using the historical price of the coin to make trading decisions
 * A combination of both
 
 I decided to go for the latter for proof of concept as there is more readily available data for free to explore this method.
@@ -18,18 +18,18 @@ I decided to go for the latter for proof of concept as there is more readily ava
 Techniques
 -------------
 During technical analysis the following systems were used to make trading decisions:
-* SMA - Using simple moving averages to determine when to buy or sell based on the intercept of the short and long moving averages.
+* **SMA** - Using simple moving averages to determine when to buy or sell based on the intercept of the short and long moving averages.
 
-* RSI - Performing relative strength analysis on a 14 day cycle and using a threshold of 80%
+* **RSI** - Performing relative strength analysis on a 14 day cycle and using a threshold of 80%
 
 Traditional machine learning was not used for this project because it doesn't add any real life value to trading as it simply applies a smoothing curve with no logic.
 
 Performance of Models
 -------------------------
-* SMA - Average year gains = 0.6966840372094414%
-        Total gains = 4.87678826046609%
-* RSI - Average year gains = 3.1764317126603365%
-        Total gains = 22.235021988622357%
+* **SMA** - **Average year gains** = 0.6966840372094414%
+        **Total gains** = 4.87678826046609%
+* **RSI** - **Average year gains** = 3.1764317126603365%
+        **Total gains** = 22.235021988622357%
 
 
 Related Blog
