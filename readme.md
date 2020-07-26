@@ -34,7 +34,12 @@ Performance of Models
 
 Related Blog
 ----------------------
-https://medium.com/@deogakofiofuafor/airbnb-seattle-for-better-understanding-21b1132ee69f
+https://medium.com/@deogakofiofuafor/can-you-predict-when-to-buy-and-sell-cryptocurrency-1b7594acabdd
+
+
+Related Website
+------------------------
+http://deoga-crypto.herokuapp.com
 
 Installation
 ----------------------
@@ -46,7 +51,8 @@ Installation
 
 * `data` folder contains three datasets
     * `data.py`: Extracts data from coingecko API.
-    Instructions on how to use the API can be found on https://www.coingecko.com/en/api
+    Instructions on how to use the API can be found on https://www.coingecko.com/en/api and https://github.com/man-c/pycoingecko
+
       * `data.py` contains
       * `get_btc_price`: This method returns the current price of any crypto currency
       * `get_top_20_mc`: This method returns the top 20 cryptocurrency according to market cap in a dataframe
