@@ -92,8 +92,8 @@ Installation
 * Check python3 installed correctly using `python3 --version` and this should return python3 version
 * Install the requirements using `pip3 install -r requirements.txt`.
     * Make sure you use Python 3
-* `cd` to the location of myapp.py (should be located in parent folder)
-* Execute `python3 myapp.py`
+* `cd` to the location of the project parent folder
+* `gunicorn -b 0.0.0.0:3001 myapp:app`
 * Follow the information printed in your environment to the site. Usually 0.0.0.0:3001 or localhost:3001
 
 
@@ -103,8 +103,10 @@ Extending this
 If you want to extend this work, here are a few places to start:
 
 * Get access to API with more detailed data preferably shorter ticks
-* Include more graphs
+* Create loops that can extract more detailed data as you can only get 90 days of detailed data at a time from coingecko
+* Add more insights and descriptions
 * Improve buy and sell signals and explore more methods
+
 
 
 
