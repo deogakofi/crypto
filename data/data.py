@@ -838,7 +838,7 @@ def return_figures():
     #Create Graph seven
     graph_seven = []
     df_seven = historic_btc_price
-    df_seven_signals = SMA_signals(df_seven.price, 21, 49)
+    df_seven_signals = SMA_signals(df_seven.price, 14, 63)
     print(df_seven.head())
     sma_range = 200
     log_yaxis = False
@@ -853,14 +853,14 @@ def return_figures():
         y=df_seven_signals.shortSMA.to_list(),
         visible=True,
         line={'color': 'green'},
-        name='smaShort(21)',
+        name='smaShort(14)',
         opacity = 0.7,
         mode='lines')
     trace_three = Scatter(x = df_seven.index.to_list(),
         y=df_seven_signals.longSMA.to_list(),
         visible=True,
         line={'color': 'red'},
-        name='smaLong(49)',
+        name='smaLong(63)',
         opacity = 0.7,
         mode='lines')
     trace_four = Scatter(
@@ -888,7 +888,7 @@ def return_figures():
     # Create layout
     layout_seven = dict(
 
-        title = 'Bitcoin historic price with SMA(14) and SMA(49) signals',
+        title = 'Bitcoin historic price with SMA(14) and SMA(63) signals',
 
         # GENERAL LAYOUT
         width = 1080,
@@ -958,7 +958,7 @@ def return_figures():
     #Create Graph eight
     graph_eight = []
     df_eight = historic_btc_price
-    df_eight_signals = RSI_signals(df_eight.price, 14)
+    df_eight_signals = RSI_signals(df_eight.price, 25)
     print(df_eight.head())
     log_yaxis = False
     trace_one = Scatter(x = df_eight.index.to_list(),
@@ -1062,8 +1062,8 @@ def return_figures():
     if log_yaxis: layout["yaxis"]["type"] = "log"
 
     #Create Graph Nine
-    avg_yearly_gains_SMA, total_gains_SMA = calculate_SMA_pct_change(historic_btc_price.price, 21,49)
-    avg_yearly_gains_RSI, total_gains_RSI = calculate_RSI_pct_change(historic_btc_price.price, 14)
+    avg_yearly_gains_SMA, total_gains_SMA = calculate_SMA_pct_change(historic_btc_price.price, 14,63)
+    avg_yearly_gains_RSI, total_gains_RSI = calculate_RSI_pct_change(historic_btc_price.price, 25)
     graph_nine = Figure(data=[Table(header=dict(values=['Model', 'avg_yearly_gains_pct', 'total_gains_pct']),
                  cells=dict(values=[['SMA', 'RSI'], [avg_yearly_gains_SMA, avg_yearly_gains_RSI],
                  [total_gains_SMA, total_gains_RSI]]))
@@ -1083,3 +1083,8 @@ def return_figures():
     figures.append(dict(data=graph_eight, layout=layout_eight))
     figures.append(dict(data=graph_nine))
     return figures
+
+
+avg_pct_change, total_pct_change = calculate_RSI_pct_change(historic_btc_price.price, 25)
+print(avg_pct_change)
+print(total_pct_change)
